@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padlet: Formalidad vs. Informalidad Laboral | Constitución y Derechos Humanos</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Corkboard / Padlet Modern Mesh Background */
+        .padlet-bg {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.18) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(225, 29, 72, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%),
+                radial-gradient(#334155 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
+        }
+
+        html:not(.dark) .padlet-bg {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(244, 63, 94, 0.10) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.10) 0px, transparent 50%),
+                radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px;
+        }
+
+        /* Smooth Card Animations */
+        .padlet-card {
+            transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .padlet-card:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Custom Scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.2);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(99, 102, 241, 0.5);
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(99, 102, 241, 0.8);
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .padlet-bg {
+                background: white !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body class="padlet-bg text-slate-800 dark:text-slate-100 min-h-screen font-sans antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-300">
+
+    <!-- ================= TOP ACADEMIC NAVIGATION & STUDENT BANNER ================= -->
+    <header class="sticky top-0 z-40 backdrop-blur-xl bg-white/85 dark:bg-slate-900/85 border-b border-slate-200/80 dark:border-slate-800/80 shadow-sm transition-colors duration-300">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                
+                <!-- Left: Padlet Brand + Title -->
+                <div class="flex items-start sm:items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-rose-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30 shrink-0">
+                        <i class="fa-solid fa-scale-balanced text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30">
+                                <i class="fa-solid fa-building-columns mr-1"></i> Curso: Constitución y Derechos Humanos
+                            </span>
+                            <span class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-500/20 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-500/30">
+                                <i class="fa-solid fa-location-dot mr-1"></i> Trujillo - El Porvenir
+                            </span>
+                        </div>
+                        <h1 class="font-display text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white mt-1">
+                            Formalidad vs. Informalidad Laboral: Realidad en Nuestro Entorno Local
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Right: Author Pill & Action Toolbar -->
+                <div class="flex flex-wrap items-center justify-between lg:justify-end gap-3">
+                    <!-- Student Badge -->
+                    <div class="flex items-center gap-3 bg-slate-100/90 dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 px-3.5 py-2 rounded-2xl shadow-inner">
+                        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm shadow">
+                            CJ
+                        </div>
+                        <div class="leading-tight">
+                            <p class="text-[11px] uppercase tracking-wider font-semibold text-slate-400 dark:text-slate-400">Estudiante / Autor</p>
+                            <p id="studentNameDisplay" class="text-xs sm:text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                                <span>César Juan Carranza Quiroz</span>
+                                <button onclick="openEditProfileModal()" title="Editar nombre o datos del curso" class="text-indigo-500 hover:text-indigo-400 transition no-print">
+                                    <i class="fa-solid fa-pen-to-square text-xs"></i>
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex items-center gap-2 no-print">
+                        <button onclick="openSimulatorModal()" class="px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs sm:text-sm shadow-md shadow-emerald-600/20 flex items-center gap-2 transition transform active:scale-95">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span class="hidden sm:inline">Simulador Sueldo</span>
+                        </button>
+
+                        <button onclick="openNewCardModal()" class="px-3.5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs sm:text-sm shadow-md shadow-indigo-600/25 flex items-center gap-2 transition transform active:scale-95">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Añadir Tarjeta</span>
+                        </button>
+
+                        <button onclick="toggleTheme()" class="p-2.5 rounded-xl bg-slate-200/80 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Cambiar Modo Claro / Oscuro">
+                            <i id="themeIcon" class="fa-solid fa-sun text-amber-400"></i>
+                        </button>
+
+                        <button onclick="window.print()" class="p-2.5 rounded-xl bg-slate-200/80 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition" title="Imprimir o Guardar PDF">
+                            <i class="fa-solid fa-print"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= SUBHEADER: INFOGRAPHIC SUMMARY & FILTER BAR ================= -->
+    <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-2">
+        <!-- Quick KPI Banner -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 p-4 rounded-2xl shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-file-shield"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-medium text-slate-500 dark:text-slate-400">Marco Normativo Formal</p>
+                    <p class="text-base font-extrabold text-slate-900 dark:text-white">D. Leg. N° 728 & Const. Art. 22°-25°</p>
+                    <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">Derechos Irrenunciables</p>
+                </div>
+            </div>
+
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 p-4 rounded-2xl shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-medium text-slate-500 dark:text-slate-400">Trabajador en Planilla Recibe</p>
+                    <p class="text-base font-extrabold text-slate-900 dark:text-white">~15 Sueldos al Año + EsSalud</p>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400">12 meses + 2 Gratis + 1 CTS + Vacaciones</p>
+                </div>
+            </div>
+
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 p-4 rounded-2xl shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-medium text-slate-500 dark:text-slate-400">Tasa de Informalidad Regional</p>
+                    <p class="text-base font-extrabold text-slate-900 dark:text-white">+70% en Microtalleres y Comercio</p>
+                    <p class="text-[11px] text-rose-600 dark:text-rose-400 font-medium">Calzado, confecciones y servicios</p>
+                </div>
+            </div>
+
+            <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 p-4 rounded-2xl shadow-sm flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                </div>
+                <div>
+                    <p class="text-xs font-medium text-slate-500 dark:text-slate-400">Pérdida Económica del Informal</p>
+                    <p class="text-base font-extrabold text-slate-900 dark:text-white">35% a 40% Menos Ingresos</p>
+                    <p class="text-[11px] text-amber-600 dark:text-amber-400 font-medium">Sin cobertura médica ni pensión</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search & Filter Bar -->
+        <div class="bg-white/75 dark:bg-slate-900/75 backdrop-blur-md border border-slate-200/80 dark:border-slate-800 rounded-2xl p-3 mb-6 flex flex-col md:flex-row items-center justify-between gap-3 no-print">
+            <!-- Category Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400 px-2">Filtrar Mural:</span>
+                <button onclick="filterPadlet('all')" id="btn-filter-all" class="filter-btn active px-3 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-sm transition">
+                    Todas las Columnas (10)
+                </button>
+                <button onclick="filterPadlet('col1')" id="btn-filter-col1" class="filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-emerald-500/20 hover:text-emerald-400 transition">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block mr-1"></span>1. Régimen General
+                </button>
+                <button onclick="filterPadlet('col2')" id="btn-filter-col2" class="filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-rose-500/20 hover:text-rose-400 transition">
+                    <span class="w-2 h-2 rounded-full bg-rose-500 inline-block mr-1"></span>2. Informalidad Local
+                </button>
+                <button onclick="filterPadlet('col3')" id="btn-filter-col3" class="filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-amber-500/20 hover:text-amber-400 transition">
+                    <span class="w-2 h-2 rounded-full bg-amber-500 inline-block mr-1"></span>3. Contraste y Constitución
+                </button>
+                <button onclick="filterPadlet('col4')" id="btn-filter-col4" class="filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-purple-500/20 hover:text-purple-400 transition">
+                    <span class="w-2 h-2 rounded-full bg-purple-500 inline-block mr-1"></span>4. Síntesis y Soluciones
+                </button>
+            </div>
+
+            <!-- Search Input -->
+            <div class="relative w-full md:w-72">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    oninput="searchCards(this.value)"
+                    placeholder="Buscar CTS, calzado, Art. 24, EsSalud..." 
+                    class="w-full pl-9 pr-4 py-2 rounded-xl text-xs bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-800 dark:text-slate-100"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAIN 4-COLUMN PADLET BOARD ================= -->
+    <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div id="padletGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
+
+            <!-- ==================== COLUMNA 1: RÉGIMEN LABORAL GENERAL ==================== -->
+            <div class="padlet-column flex flex-col gap-4" data-col="col1">
+                <!-- Column Header -->
+                <div class="bg-gradient-to-r from-emerald-600 to-teal-600 p-4 rounded-2xl text-white shadow-lg shadow-emerald-600/20 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-lg">
+                            1
+                        </div>
+                        <div>
+                            <h2 class="font-display font-bold text-sm sm:text-base leading-tight">Beneficios del Régimen General</h2>
+                            <p class="text-[11px] text-emerald-100">D. Leg. N° 728 • Sector Privado Formal</p>
+                        </div>
+                    </div>
+                    <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-black/20">3 Tarjetas</span>
+                </div>
+
+                <!-- Card 1.1 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-file-signature mr-1"></i> Estabilidad e Ingresos
+                            </span>
+                            <span>Tarjeta 1.1</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Remuneración Justa, Contrato y Jornada Legal
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            El trabajador formal es registrado en planilla electrónica (<strong>T-Registro</strong>) desde el primer día y goza de protección contra el despido arbitrario tras superar el periodo de prueba (3 meses).
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300 bg-emerald-50/70 dark:bg-emerald-950/30 p-3.5 rounded-xl border border-emerald-200/60 dark:border-emerald-800/40 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Remuneración Mínima Vital (RMV):</strong> Sueldo base no menor al mínimo legal vigente con entrega de boleta de pago.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Jornada Máxima:</strong> 8 horas diarias o 48 horas semanales como tope constitucional.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i>
+                                <span><strong>Horas Extras Pagadas:</strong> Sobretasa legal del <strong>+25%</strong> para las dos primeras horas y <strong>+35%</strong> para las siguientes.</span>
+                            </li>
+                        </ul>
+
+                        <!-- Card Footer Reactions -->
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>24</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>César Carranza</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 1.2 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-piggy-bank mr-1"></i> Beneficios Económicos
+                            </span>
+                            <span>Tarjeta 1.2</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            CTS, Gratificaciones Legales y Asignación Familiar
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            Adicionalmente a sus 12 sueldos mensuales, el Régimen General otorga beneficios sociales que respaldan la economía familiar y protegen ante el cese laboral:
+                        </p>
+                        <div class="grid grid-cols-1 gap-2.5 mb-4">
+                            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700/70">
+                                <p class="text-xs font-bold text-emerald-600 dark:text-emerald-400">1. Compensación por Tiempo de Servicios (CTS)</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Seguro de desempleo equivalente a ~1 sueldo anual depositado en dos armadas semestrales (<strong>mayo y noviembre</strong>).</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700/70">
+                                <p class="text-xs font-bold text-emerald-600 dark:text-emerald-400">2. Dos Gratificaciones Anuales + Bonificación 9%</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Un sueldo íntegro en <strong>Fiestas Patrias (julio)</strong> y otro en <strong>Navidad (diciembre)</strong>, inafectos de descuentos y con un 9% extra.</p>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700/70">
+                                <p class="text-xs font-bold text-emerald-600 dark:text-emerald-400">3. Asignación Familiar (10% RMV)</p>
+                                <p class="text-xs text-slate-600 dark:text-slate-300 mt-0.5">Pago mensual adicional para trabajadores con hijos menores de 18 años (o hasta 24 años si cursan estudios superiores).</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>31</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>César Carranza</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 1.3 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-emerald-500 to-teal-400"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-heart-pulse mr-1"></i> Salud y Bienestar
+                            </span>
+                            <span>Tarjeta 1.3</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Seguridad Social, Vacaciones Pagadas y Vida Ley
+                        </h3>
+                        <ul class="space-y-2.5 text-xs text-slate-600 dark:text-slate-300 mb-4">
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-6 h-6 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-hospital"></i></span>
+                                <span><strong>EsSalud (9% a cargo del empleador):</strong> Atención médica integral para el trabajador y sus derechohabientes, más subsidios por maternidad o incapacidad temporal.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-6 h-6 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-umbrella-beach"></i></span>
+                                <span><strong>30 Días de Vacaciones Remuneradas:</strong> Descanso físico anual pagado por cada año completo de servicios, además de feriados nacionales y descanso semanal.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-6 h-6 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0 mt-0.5"><i class="fa-solid fa-shield-heart"></i></span>
+                                <span><strong>Seguro Vida Ley y Pensiones (ONP/AFP):</strong> Cobertura ante fallecimiento o invalidez total desde el día 1 de labores y construcción de un fondo de jubilación.</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>19</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>César Carranza</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ==================== COLUMNA 2: INFORMALIDAD EN EL ENTORNO LOCAL ==================== -->
+            <div class="padlet-column flex flex-col gap-4" data-col="col2">
+                <!-- Column Header -->
+                <div class="bg-gradient-to-r from-rose-600 to-orange-600 p-4 rounded-2xl text-white shadow-lg shadow-rose-600/20 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-lg">
+                            2
+                        </div>
+                        <div>
+                            <h2 class="font-display font-bold text-sm sm:text-base leading-tight">Informalidad en el Entorno Local</h2>
+                            <p class="text-[11px] text-rose-100">Problemática en Trujillo y El Porvenir</p>
+                        </div>
+                    </div>
+                    <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-black/20">3 Tarjetas</span>
+                </div>
+
+                <!-- Card 2.1 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-rose-500 to-orange-500"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-rose-600 dark:text-rose-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-shoe-prints mr-1"></i> Sector Manufactura y Calzado
+                            </span>
+                            <span>Tarjeta 2.1</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Trabajo "Al Destajo" en Talleres de Calzado y Confecciones
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            En distritos zapateros e industriales como <strong>El Porvenir, La Esperanza y Florencia de Mora</strong>, gran parte de los operarios (cortadores, perfiladores, armadores) laboran en microtalleres sin contrato escrito.
+                        </p>
+                        <div class="bg-rose-50/70 dark:bg-rose-950/30 border border-rose-200/60 dark:border-rose-800/40 rounded-xl p-3.5 space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-4">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                                <span><strong>Pago por docena o tarea:</strong> El ingreso depende exclusivamente de las docenas producidas en la semana, sin garantizar la RMV cuando bajan los pedidos.</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                                <span><strong>Jornadas de 10 a 12 horas en campaña:</strong> En campaña escolar o navideña se exceden las 48h semanales sin reconocimiento de horas extras (+25% / +35%).</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-circle-xmark text-rose-500 mt-0.5"></i>
+                                <span><strong>Cese sin CTS:</strong> Al terminar la campaña productiva, el trabajador es prescindido de inmediato con "cero" liquidación.</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>38</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-location-dot mr-1"></i>Caso Local</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2.2 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-rose-500 to-orange-500"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-rose-600 dark:text-rose-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-store mr-1"></i> Comercio y Servicios
+                            </span>
+                            <span>Tarjeta 2.2</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Acuerdos "De Palabra" y la Regla: "Día No Trabajado, Día No Pagado"
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            En mercados locales (La Hermelinda, Mayorista), restaurantes, bodegas y transporte urbano, predomina la contratación verbal o el uso distorsionado de Recibos por Honorarios para encubrir relaciones subordinadas:
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300 mb-4">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-0.5"></i>
+                                <span><strong>Sin Descanso Remunerado:</strong> Feriados nacionales se trabajan como días normales sin triple pago; no existen los 30 días de vacaciones pagadas.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-0.5"></i>
+                                <span><strong>Reemplazo de Gratificación por "Canasta":</strong> En julio y diciembre no se paga gratificación legal; a lo sumo se entrega un vale o canasta simbólica.</span>
+                            </li>
+                        </ul>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>27</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-location-dot mr-1"></i>Caso Local</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2.3 -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-rose-500 to-orange-500"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-rose-600 dark:text-rose-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-user-injured mr-1"></i> Vulnerabilidad Social
+                            </span>
+                            <span>Tarjeta 2.3</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Desprotección ante Accidentes Laborales y Vejez sin Pensión
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            El impacto más humano de la informalidad en nuestra comunidad se manifiesta cuando ocurre una contingencia de salud o llega la tercera edad:
+                        </p>
+                        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border-l-4 border-rose-500 text-xs text-slate-600 dark:text-slate-300 mb-4">
+                            "Cuando un operario sufre un accidente con maquinaria de desbaste o inhalación de solventes y pegamentos, no cuenta con SCTR ni subsidio de EsSalud. Debe costear su recuperación de su propio bolsillo mientras deja de percibir ingresos."
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>22</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>César Carranza</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ==================== COLUMNA 3: CONTRASTE DIRECTO Y MARCO CONSTITUCIONAL ==================== -->
+            <div class="padlet-column flex flex-col gap-4" data-col="col3">
+                <!-- Column Header -->
+                <div class="bg-gradient-to-r from-amber-500 to-orange-500 p-4 rounded-2xl text-white shadow-lg shadow-amber-500/20 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-lg">
+                            3
+                        </div>
+                        <div>
+                            <h2 class="font-display font-bold text-sm sm:text-base leading-tight">Contraste y Marco Constitucional</h2>
+                            <p class="text-[11px] text-amber-100">Comparativa Directa y Constitución de 1993</p>
+                        </div>
+                    </div>
+                    <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-black/20">2 Tarjetas</span>
+                </div>
+
+                <!-- Card 3.1: Tabla Comparativa -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-amber-500 to-yellow-400"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-table-columns mr-1"></i> Cuadro Comparativo
+                            </span>
+                            <span>Tarjeta 3.1</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-3">
+                            Contraste Directo: Régimen General vs. Empleo Informal Local
+                        </h3>
+
+                        <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700 mb-4">
+                            <table class="w-full text-left border-collapse text-xs">
+                                <thead>
+                                    <tr class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+                                        <th class="p-2.5 font-bold border-b border-slate-200 dark:border-slate-700">Criterio</th>
+                                        <th class="p-2.5 font-bold text-emerald-600 dark:text-emerald-400 border-b border-slate-200 dark:border-slate-700">Formal (D.L. 728)</th>
+                                        <th class="p-2.5 font-bold text-rose-600 dark:text-rose-400 border-b border-slate-200 dark:border-slate-700">Informal (Local)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 dark:divide-slate-800 text-slate-600 dark:text-slate-300">
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">Contrato</td>
+                                        <td class="p-2.5">Planilla y boleta de pago</td>
+                                        <td class="p-2.5">Verbal ("de palabra")</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">Jornada</td>
+                                        <td class="p-2.5">8h diarias / 48h sem.</td>
+                                        <td class="p-2.5">10 a 12h sin pago extra</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">Gratificación</td>
+                                        <td class="p-2.5">2 sueldos/año + 9%</td>
+                                        <td class="p-2.5">Inexistente o propina</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">CTS</td>
+                                        <td class="p-2.5">1 sueldo anual (May/Nov)</td>
+                                        <td class="p-2.5">S/ 0 al quedar sin empleo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">Salud</td>
+                                        <td class="p-2.5">EsSalud (9% empleador)</td>
+                                        <td class="p-2.5">Gasto de su bolsillo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-2.5 font-semibold">Vacaciones</td>
+                                        <td class="p-2.5">30 días pagados/año</td>
+                                        <td class="p-2.5">Si descansa, no cobra</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>45</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-scale-balanced mr-1"></i>Síntesis Comparativa</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3.2: Derechos Constitucionales Vulnerados -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-amber-500 to-yellow-400"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-amber-600 dark:text-amber-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-book-bookmark mr-1"></i> Constitución y DD.HH.
+                            </span>
+                            <span>Tarjeta 3.2</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Análisis Constitucional: Artículos 22° al 26° Vulnerados por la Informalidad
+                        </h3>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mb-3">
+                            Desde la perspectiva de nuestro curso de <strong>Constitución y Derechos Humanos</strong>, la informalidad laboral vulnera garantías constitucionales directas:
+                        </p>
+                        <div class="space-y-2 text-xs mb-4">
+                            <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <span class="font-bold text-amber-600 dark:text-amber-400">Art. 22° y 23° CPP (Dignidad en el Trabajo):</span>
+                                <p class="text-slate-600 dark:text-slate-300 mt-0.5">El trabajo es un deber y un derecho; ninguna relación laboral puede limitar el ejercicio de los derechos constitucionales ni rebajar la dignidad del trabajador.</p>
+                            </div>
+                            <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <span class="font-bold text-amber-600 dark:text-amber-400">Art. 24° CPP (Remuneración Equitativa y Beneficios):</span>
+                                <p class="text-slate-600 dark:text-slate-300 mt-0.5">Consagra el derecho a una remuneración equitativa y suficiente que procure bienestar material y espiritual, así como la prioridad del pago de beneficios sociales.</p>
+                            </div>
+                            <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <span class="font-bold text-amber-600 dark:text-amber-400">Art. 25° y 26° CPP (Jornada 8h e Irrenunciabilidad):</span>
+                                <p class="text-slate-600 dark:text-slate-300 mt-0.5">Fija la jornada máxima de 8 horas, el derecho a descansos anuales remunerados y el principio de <strong>irrenunciabilidad de los derechos laborales</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>52</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-gavel mr-1"></i>Base Constitucional</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ==================== COLUMNA 4: SÍNTESIS REFLEXIVA Y SOLUCIONES ==================== -->
+            <div class="padlet-column flex flex-col gap-4" data-col="col4">
+                <!-- Column Header -->
+                <div class="bg-gradient-to-r from-purple-600 to-indigo-600 p-4 rounded-2xl text-white shadow-lg shadow-purple-600/20 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center font-bold text-lg">
+                            4
+                        </div>
+                        <div>
+                            <h2 class="font-display font-bold text-sm sm:text-base leading-tight">Síntesis y Propuestas</h2>
+                            <p class="text-[11px] text-purple-100">Impacto Económico y Ruta de Formalización</p>
+                        </div>
+                    </div>
+                    <span class="px-2.5 py-1 text-xs font-bold rounded-lg bg-black/20">2 Tarjetas</span>
+                </div>
+
+                <!-- Card 4.1: Costo Real de no estar en Planilla -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-chart-pie mr-1"></i> Brecha Financiera Anual
+                            </span>
+                            <span>Tarjeta 4.1</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            El Costo Real de No Estar en Planilla (Impacto en la Familia)
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            Un trabajador en el Régimen General con sueldo base de <strong>S/ 1,025 (RMV)</strong> y carga familiar recibe realmente en el año más de <strong>S/ 18,300</strong> entre sueldos, gratificaciones, CTS, asignación familiar y cobertura EsSalud.
+                        </p>
+
+                        <!-- Visual Bar Chart Comparison -->
+                        <div class="bg-slate-50 dark:bg-slate-800/80 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 mb-4 space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-emerald-600 dark:text-emerald-400">Trabajador Formal (Planilla)</span>
+                                    <span>100% Derechos (~15 sueldos + Salud)</span>
+                                </div>
+                                <div class="w-full h-3 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-rose-600 dark:text-rose-400">Trabajador Informal Local</span>
+                                    <span>Pierde ~36% en Beneficios Sociales</span>
+                                </div>
+                                <div class="w-full h-3 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-rose-500 to-orange-500 rounded-full" style="width: 64%"></div>
+                                </div>
+                            </div>
+                            <button onclick="openSimulatorModal()" class="w-full py-2 mt-1 rounded-lg bg-indigo-600/10 hover:bg-indigo-600/20 text-indigo-600 dark:text-indigo-300 font-bold text-xs transition flex items-center justify-center gap-1.5 no-print">
+                                <i class="fa-solid fa-calculator"></i> Abrir Calculadora Interactiva de Beneficios
+                            </button>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>33</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>César Carranza</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4.2: Conclusiones y Propuestas -->
+                <article class="padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-indigo-500"></div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                            <span class="font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider">
+                                <i class="fa-solid fa-lightbulb mr-1"></i> Conclusión y Propuestas
+                            </span>
+                            <span>Tarjeta 4.2</span>
+                        </div>
+                        <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2.5">
+                            Síntesis Reflexiva: Hacia un Trabajo Digno en Nuestra Comunidad
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
+                            La informalidad laboral no solo perpetúa la vulnerabilidad de las familias trabajadoras al privarlas de salud y jubilación, sino que frena la competitividad de los talleres y comercios locales al impedirles exportar o contratar con el Estado.
+                        </p>
+                        <div class="space-y-2 text-xs text-slate-600 dark:text-slate-300 bg-purple-50/70 dark:bg-purple-950/30 p-3.5 rounded-xl border border-purple-200/60 dark:border-purple-800/40 mb-4">
+                            <p class="font-bold text-purple-700 dark:text-purple-300">Propuestas de Acción Local:</p>
+                            <p><strong>1. Escalonamiento Formal (REMYPE → Régimen General):</strong> Promover que microtalleres se inscriban inicialmente en el Registro MYPE para otorgar salud y vacaciones, escalando hacia el D. Leg. 728 conforme crezcan sus ventas.</p>
+                            <p><strong>2. Compras Estatales y Asociatividad:</strong> Impulsar consorcios de productores formales en Trujillo y El Porvenir para acceder a licitaciones y créditos bancarios con tasas preferenciales.</p>
+                            <p><strong>3. Fiscalización Orientativa (SUNAFIL):</strong> Capacitación preventiva en derechos laborales y seguridad industrial en zonas productivas locales.</p>
+                        </div>
+
+                        <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                            <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                                <i class="fa-solid fa-heart text-rose-500"></i>
+                                <span>64</span>
+                            </button>
+                            <span class="text-[11px] text-slate-400"><i class="fa-solid fa-graduation-cap mr-1"></i>Reflexión Final</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ================= MODAL 1: SIMULADOR DE IMPACTO LABORAL ================= -->
+    <div id="simulatorModal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl animate-fadeIn">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Simulador Comparativo: Formal vs. Informal</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Calcula cuánto pierde al año un trabajador fuera de planilla (D. Leg. 728)</p>
+                    </div>
+                </div>
+                <button onclick="closeSimulatorModal()" class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-rose-500 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="py-5 space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+                            Remuneración Mensual Base (S/)
+                        </label>
+                        <input 
+                            type="number" 
+                            id="simSalaryInput" 
+                            value="1025" 
+                            min="500" 
+                            step="50"
+                            oninput="calculateImpact()"
+                            class="w-full px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-bold text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        >
+                    </div>
+                    <div class="flex items-end">
+                        <label class="flex items-center gap-3 p-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 w-full cursor-pointer">
+                            <input type="checkbox" id="simFamilyCheck" checked onchange="calculateImpact()" class="w-4 h-4 accent-indigo-600 rounded">
+                            <span class="text-xs font-semibold text-slate-700 dark:text-slate-200">Incluye Asignación Familiar (Hijos menores)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Breakdown Results -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Régimen Laboral General (Formal)</span>
+                        <p id="formalTotalAnnual" class="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">S/ 18,381.00</p>
+                        <ul id="formalBreakdownList" class="mt-3 space-y-1 text-xs text-slate-600 dark:text-slate-300">
+                            <!-- Filled via JS -->
+                        </ul>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-rose-500/10 border border-rose-500/30 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">Situación Informal Local</span>
+                            <p id="informalTotalAnnual" class="text-2xl font-extrabold text-rose-600 dark:text-rose-400 mt-1">S/ 12,300.00</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">
+                                Solo recibe el pago directo de los 12 meses sin gratificaciones, sin CTS, sin asignación familiar ni cobertura de EsSalud.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-rose-500/20">
+                            <p class="text-xs font-bold text-rose-600 dark:text-rose-400">
+                                Pérdida Anual para el Trabajador: <span id="lossAmount" class="text-base underline">S/ 6,081.00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-3 border-t border-slate-200 dark:border-slate-800">
+                <button onclick="closeSimulatorModal()" class="px-5 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-semibold text-xs hover:bg-slate-300 dark:hover:bg-slate-700 transition">
+                    Cerrar Simulador
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL 2: AÑADIR NUEVA TARJETA AL PADLET ================= -->
+    <div id="newCardModal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-lg w-full p-6 shadow-2xl">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+                <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">
+                    <i class="fa-solid fa-plus-circle text-indigo-500 mr-1.5"></i> Publicar Nueva Tarjeta en el Padlet
+                </h3>
+                <button onclick="closeNewCardModal()" class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-rose-500 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form onsubmit="addNewCard(event)" class="py-4 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 dark:text-slate-400 mb-1">Columna Destino</label>
+                    <select id="newCardColumn" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-800 dark:text-white">
+                        <option value="col1">Columna 1: Beneficios del Régimen General (D. Leg. 728)</option>
+                        <option value="col2">Columna 2: Informalidad en el Entorno Local</option>
+                        <option value="col3">Columna 3: Contraste y Marco Constitucional</option>
+                        <option value="col4">Columna 4: Síntesis y Propuestas de Solución</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 dark:text-slate-400 mb-1">Título de la Tarjeta</label>
+                    <input type="text" id="newCardTitle" required placeholder="Ej. Fiscalización de SUNAFIL en La Libertad" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs text-slate-800 dark:text-white">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 dark:text-slate-400 mb-1">Contenido / Aporte</label>
+                    <textarea id="newCardContent" rows="4" required placeholder="Escribe aquí el análisis o aporte para el mural..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs text-slate-800 dark:text-white"></textarea>
+                </div>
+
+                <div class="flex justify-end gap-2 pt-2">
+                    <button type="button" onclick="closeNewCardModal()" class="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-xs font-semibold">Cancelar</button>
+                    <button type="submit" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md">Publicar en el Padlet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= MODAL 3: EDITAR NOMBRE DEL ESTUDIANTE ================= -->
+    <div id="editProfileModal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-md w-full p-6 shadow-2xl">
+            <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-3">
+                Personalizar Nombre del Autor
+            </h3>
+            <input type="text" id="studentNameInput" value="César Juan Carranza Quiroz" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-sm text-slate-900 dark:text-white mb-4">
+            <div class="flex justify-end gap-2">
+                <button onclick="closeEditProfileModal()" class="px-4 py-2 rounded-xl bg-slate-200 dark:bg-slate-800 text-xs font-semibold">Cancelar</button>
+                <button onclick="saveStudentName()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-bold">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ACADÉMICO ================= -->
+    <footer class="border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md py-6 mt-8">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-scale-balanced text-indigo-500"></i>
+                <span><strong>Curso:</strong> Constitución y Derechos Humanos • <strong>Régimen Laboral General (D. Leg. N° 728)</strong></span>
+            </div>
+            <div>
+                Elaborado por <strong id="footerStudentName" class="text-slate-800 dark:text-slate-200">César Juan Carranza Quiroz</strong> • Muro Interactivo Padlet
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT INTERACTIVITY ================= -->
+    <script>
+        // 1. Theme Toggle (Dark / Light)
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('themeIcon');
+            html.classList.toggle('dark');
+            if (html.classList.contains('dark')) {
+                icon.className = 'fa-solid fa-sun text-amber-400';
+            } else {
+                icon.className = 'fa-solid fa-moon text-indigo-600';
+            }
+        }
+
+        // 2. Heart / Like Counter on Cards
+        function likeCard(btn) {
+            const span = btn.querySelector('span');
+            let count = parseInt(span.textContent, 10);
+            if (btn.classList.contains('liked')) {
+                count--;
+                btn.classList.remove('liked', 'ring-2', 'ring-rose-500/40');
+            } else {
+                count++;
+                btn.classList.add('liked', 'ring-2', 'ring-rose-500/40');
+            }
+            span.textContent = count;
+        }
+
+        // 3. Filter Padlet Columns
+        function filterPadlet(colId) {
+            const columns = document.querySelectorAll('.padlet-column');
+            const grid = document.getElementById('padletGrid');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(b => {
+                b.classList.remove('bg-indigo-600', 'text-white');
+                b.classList.add('bg-slate-100', 'dark:bg-slate-800');
+            });
+
+            const activeBtn = document.getElementById('btn-filter-' + colId);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-slate-100', 'dark:bg-slate-800');
+                activeBtn.classList.add('bg-indigo-600', 'text-white');
+            }
+
+            if (colId === 'all') {
+                grid.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-start';
+                columns.forEach(col => col.classList.remove('hidden'));
+            } else {
+                grid.className = 'grid grid-cols-1 max-w-2xl mx-auto gap-6 items-start';
+                columns.forEach(col => {
+                    if (col.getAttribute('data-col') === colId) {
+                        col.classList.remove('hidden');
+                    } else {
+                        col.classList.add('hidden');
+                    }
+                });
+            }
+        }
+
+        // 4. Live Search across Padlet Cards
+        function searchCards(query) {
+            const normalized = query.toLowerCase().trim();
+            const cards = document.querySelectorAll('.padlet-card');
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(normalized)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // 5. Salary Impact Simulator Logic
+        function openSimulatorModal() {
+            document.getElementById('simulatorModal').classList.remove('hidden');
+            calculateImpact();
+        }
+        function closeSimulatorModal() {
+            document.getElementById('simulatorModal').classList.add('hidden');
+        }
+
+        function calculateImpact() {
+            const baseSalary = parseFloat(document.getElementById('simSalaryInput').value) || 1025;
+            const hasFamily = document.getElementById('simFamilyCheck').checked;
+            const familyAllowance = hasFamily ? 102.50 : 0; // 10% RMV referencial
+            const monthlyRemuneration = baseSalary + familyAllowance;
+
+            const annualTwelveSalaries = monthlyRemuneration * 12;
+            const twoGratificaciones = monthlyRemuneration * 2;
+            const bonus9Percent = twoGratificaciones * 0.09;
+            const annualCTS = monthlyRemuneration * (1 + 1/6); // 1 sueldo + 1/6 de grati
+            const essaludEmployer = annualTwelveSalaries * 0.09;
+
+            const totalFormal = annualTwelveSalaries + twoGratificaciones + bonus9Percent + annualCTS + essaludEmployer;
+            const totalInformal = baseSalary * 12;
+            const loss = totalFormal - totalInformal;
+
+            document.getElementById('formalTotalAnnual').textContent = 'S/ ' + totalFormal.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('informalTotalAnnual').textContent = 'S/ ' + totalInformal.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('lossAmount').textContent = 'S/ ' + loss.toLocaleString('es-PE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+            document.getElementById('formalBreakdownList').innerHTML = `
+                <li class="flex justify-between"><span>• 12 Sueldos (+ Asig. Fam.):</span> <strong>S/ ${annualTwelveSalaries.toFixed(2)}</strong></li>
+                <li class="flex justify-between"><span>• 2 Gratificaciones (Jul/Dic):</span> <strong>S/ ${twoGratificaciones.toFixed(2)}</strong></li>
+                <li class="flex justify-between"><span>• Bonificación Extra. (9%):</span> <strong>S/ ${bonus9Percent.toFixed(2)}</strong></li>
+                <li class="flex justify-between"><span>• CTS Anual (May/Nov):</span> <strong>S/ ${annualCTS.toFixed(2)}</strong></li>
+                <li class="flex justify-between"><span>• Cobertura EsSalud (9%):</span> <strong>S/ ${essaludEmployer.toFixed(2)}</strong></li>
+            `;
+        }
+
+        // 6. Add Custom Padlet Card Dynamically
+        function openNewCardModal() {
+            document.getElementById('newCardModal').classList.remove('hidden');
+        }
+        function closeNewCardModal() {
+            document.getElementById('newCardModal').classList.add('hidden');
+        }
+
+        function addNewCard(e) {
+            e.preventDefault();
+            const colId = document.getElementById('newCardColumn').value;
+            const title = document.getElementById('newCardTitle').value;
+            const content = document.getElementById('newCardContent').value;
+            const author = document.querySelector('#studentNameDisplay span').textContent;
+
+            const columnEl = document.querySelector(`.padlet-column[data-col="${colId}"]`);
+            if (!columnEl) return;
+
+            const colorMap = {
+                col1: 'from-emerald-500 to-teal-400',
+                col2: 'from-rose-500 to-orange-500',
+                col3: 'from-amber-500 to-yellow-400',
+                col4: 'from-purple-500 to-indigo-500'
+            };
+
+            const article = document.createElement('article');
+            article.className = 'padlet-card bg-white dark:bg-slate-900/95 border border-slate-200/90 dark:border-slate-800 rounded-2xl overflow-hidden shadow-md';
+            article.innerHTML = `
+                <div class="h-2 bg-gradient-to-r ${colorMap[colId]}"></div>
+                <div class="p-5">
+                    <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                        <span class="font-semibold text-indigo-500 uppercase tracking-wider">
+                            <i class="fa-solid fa-thumbtack mr-1"></i> Nuevo Aporte
+                        </span>
+                        <span>Ahora</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white mb-2">${title}</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">${content}</p>
+                    <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500">
+                        <button onclick="likeCard(this)" class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-rose-500/10 hover:text-rose-500 transition font-semibold">
+                            <i class="fa-solid fa-heart text-rose-500"></i>
+                            <span>1</span>
+                        </button>
+                        <span class="text-[11px] text-slate-400"><i class="fa-solid fa-user-check mr-1"></i>${author}</span>
+                    </div>
+                </div>
+            `;
+
+            columnEl.appendChild(article);
+            document.getElementById('newCardTitle').value = '';
+            document.getElementById('newCardContent').value = '';
+            closeNewCardModal();
+        }
+
+        // 7. Edit Student Name Modal
+        function openEditProfileModal() {
+            document.getElementById('editProfileModal').classList.remove('hidden');
+        }
+        function closeEditProfileModal() {
+            document.getElementById('editProfileModal').classList.add('hidden');
+        }
+        function saveStudentName() {
+            const newName = document.getElementById('studentNameInput').value.trim();
+            if (newName) {
+                document.querySelector('#studentNameDisplay span').textContent = newName;
+                document.getElementById('footerStudentName').textContent = newName;
+            }
+            closeEditProfileModal();
+        }
+    </script>
+</body>
+</html>
